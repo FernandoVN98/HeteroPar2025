@@ -1,2 +1,2 @@
 # HeteroPar2025
-Repository containing additional figures related with the HeteroPar submission. The code of the experiments is also available
+This repository contains all the necessary data to reproduce the experiments conducted for the article "Scalable Neural Network Training: Distributed Data-Parallel Approaches" presented in the 23rd Algorithms, Models and Tools for Parallel Computing on Heterogeneous Platforms (HeteroPar2025).

@@ -23,7 +23,7 @@ class ScaledStdConv2d(nn.Conv2d):
 class ScaledReLU(nn.Module):
     def __init__(self, alpha=1.0):
         super().__init__()
-        self.alpha = nn.Parameter(torch.tensor(alpha))  # Convertir a parámetro aprendible
+        self.alpha = nn.Parameter(torch.tensor(alpha))  # Change to learnable parameter
 
     def forward(self, x):
         return F.relu(x) * self.alpha
@@ -90,7 +90,7 @@ class NFNet(nn.Module):
             if isinstance(m, (nn.Conv2d, nn.Linear)):
                 torch.nn.init.kaiming_normal_(m.weight, mode='fan_in', nonlinearity='relu')
                 if m.bias is not None:
-                    nn.init.zeros_(m.bias)  # Inicializar biases a cero
+                    nn.init.zeros_(m.bias)  # Initialize bias to zero
 
     def forward(self, x):
         x = self.neural_network_layers(x)

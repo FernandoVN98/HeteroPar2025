@@ -7,6 +7,4 @@ Figures contains the plots of the learning curves of the Neural Network in the C
 
 The Code folder contains the neural networks architectures used in the experiments of the article.
 
-These tests are reproducible outside MareNostrum 5, the accuracy results should be the same. However the times reported can vary if the execution infrastructure is different. 
-
-The dataset to reproduce the experiments is [CINIC-10](https://www.kaggle.com/datasets/mengcius/cinic10)
+The public dataset used in the article [CINIC-10](https://www.kaggle.com/datasets/mengcius/cinic10)
